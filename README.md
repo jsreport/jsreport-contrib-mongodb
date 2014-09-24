@@ -27,8 +27,8 @@ Then you can operate with data in the report template in the standard way. Next 
 <table>	
 {{for people}}
 	<tr>
-		<td>{{:#name}}</td>
-		<td>{{:#age}}</td>
+		<td>{{:name}}</td>
+		<td>{{:age}}</td>
 	</tr>
 {{/for}}
 </table>
