@@ -3,6 +3,7 @@
 > [jsreport](https://github.com/jsreport/jsreport) extension allowing to work with [mongodb npm module](https://github.com/mongodb/node-mongodb-native) inside jsreport [custom scripts](http://jsreport.net/learn/scripts).
 
 This extension is pre-installed in jsreport [online](http://jsreport.net/online) version. You may install this extension to jsreport [on-prem](http://jsreport.net/on-prem) by:
+
 ```
 npm install jsreport-contrib-mongodb
 ```
@@ -13,13 +14,18 @@ Once is `jsreport-contrib-mongodb` extension running you can use `require('mongo
 Simple script loading data from mongodb
 
 ```javascript
-var MongoClient = require('mongodb').MongoClient; 
-MongoClient.connect('mongodb://127.0.0.1:27017/maindb', function(err, db) {
-	var collection = db.collection('people').find().toArray(function(err, results) {
-		request.data = results;
-		done();
+function beforeRender(done) {
+	var MongoClient = require('mongodb').MongoClient; 
+	MongoClient.connect('mongodb://127.0.0.1:27017/maindb', function(err, db) {
+		var collection = db.collection('people').find().toArray(function(err, results) {
+		    if (err)
+		      return done(err);
+		      
+			request.data = { people: results };
+			done();
+		});
 	});
-})
+}
 ```
 
 Then you can operate with data in the report template in the standard way. Next example is using [jsrender](http://jsreport.net/learn/jsrender) to print a table.
