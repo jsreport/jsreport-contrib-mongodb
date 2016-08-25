@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/jsreport/jsreport-contrib-mongodb",
   "dependencies": {
-    "mongodb": "^1.4.12"
+    "mongodb": "^2.2.6"
   },
   "devDependencies": {
     "jsreport": "jsreport/jsreport"
