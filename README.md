@@ -8,7 +8,7 @@ This extension is pre-installed in jsreport [online](http://jsreport.net/online)
 npm install jsreport-contrib-mongodb
 ```
 
-##Example
+## Example
 Once is `jsreport-contrib-mongodb` extension running you can use `require('mongodb')` inside your custom scripts.
 
 Simple script loading data from mongodb
@@ -41,7 +41,7 @@ Then you can operate with data in the report template in the standard way. Next 
 ```
 
 
-##License
+## License
 The MIT License (MIT)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
