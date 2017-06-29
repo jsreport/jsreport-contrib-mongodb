@@ -2,10 +2,7 @@
   "name": "jsreport-contrib-mongodb",
   "version": "0.0.1",
   "description": "Allowing to use mongodb npm module inside scripts extension.",
-  "main": "jsreport.config.js",
-  "scripts": {
-    "test": "mocha test"
-  },
+  "main": "jsreport.config.js",  
   "repository": {
     "type": "git",
     "url": "https://github.com/jsreport/jsreport-contrib-mongodb.git"
@@ -22,8 +19,5 @@
   "homepage": "https://github.com/jsreport/jsreport-contrib-mongodb",
   "dependencies": {
     "mongodb": "^2.2.6"
-  },
-  "devDependencies": {
-    "jsreport": "jsreport/jsreport"
-  }
+  } 
 }
