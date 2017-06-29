@@ -1,6 +1,6 @@
 {
   "name": "jsreport-contrib-mongodb",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Allowing to use mongodb npm module inside scripts extension.",
   "main": "jsreport.config.js",  
   "repository": {
