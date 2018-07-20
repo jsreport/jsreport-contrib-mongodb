@@ -1,5 +1,12 @@
 # jsreport-contrib-mongodb
 
+**DEPRECATED**    
+Don't use this extension. There are just two manual steps required to install mongo client and start using it in your scripts.
+https://jsreport.net/blog/pdf-reports-from-mongodb
+
+<hr/>
+<hr/>
+
 > [jsreport](https://github.com/jsreport/jsreport) extension allowing to work with [mongodb npm module](https://github.com/mongodb/node-mongodb-native) inside jsreport [custom scripts](http://jsreport.net/learn/scripts).
 
 This extension is pre-installed in jsreport [online](http://jsreport.net/online) version. You may install this extension to jsreport [on-prem](http://jsreport.net/on-prem) by:
